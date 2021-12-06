@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+int main() 
+{
+	cout << "Enter an alphabet:" << endl;
+	char alph;
+	cin >> alph;
+
+	if (isalpha(alph))
+	{
+		if (alph == 'a' || alph == 'e' || alph == 'i' || alph == 'o' || alph == 'u' || alph == 'A' || alph == 'E' || alph == 'I' || alph == 'O' || alph == 'U') // Checking if the entered character is a vowel
+		{
+			cout << "The input is a vowel." << endl;
+		}
+		else
+		{
+			cout << "The input is a consonant." << endl;
+		}
+	}
+	else if (isdigit(alph))
+	{
+		cout << "That is a number" << endl;
+	}
+	else
+	{
+		cout << "That is a special character" << endl;
+	}
+
+	cin.get();
+	return 0;
+}
