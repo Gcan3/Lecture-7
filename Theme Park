@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+int main() 
+{
+	int age;
+	double height;
+
+	cout << "Enter height (in meters): \n";
+	cin >> height;
+
+	cout << "Enter age:\n";
+	cin >> age;
+
+	if (height > 0.6 && age >= 5)
+	{
+		cout << "Enjoy the theme park!" << endl;
+	}
+	else 
+	{
+		cout << "Sorry, you do not meet the conditions to go to the theme park" << endl;
+	}
+
+	cin.get();
+	return 0;
+}
